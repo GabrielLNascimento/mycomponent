@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tipografia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,5 +22,76 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <h2>My Component</h2>
+        <article class="destaque">
+            <h2 class="title-article">Tipografia</h2>
+            <p>A tipografia é a arte e o processo de criação na composição e impressão de um texto, física ou digitalmente.</p>
+        </article>
+
+        <section>
+            <h3>Elementos</h3>
+
+            <h4>Textos</h4>
+            <p>Esse texto está escrito em <b>negrito</b> e esse trecho esta escrito em <strong>texto forte</strong></p>
+            <p>Esse texto está escrito em <i>itálico</i> e este está com <em>enfâse</em></p>
+            <p>Isso é um <u>texto sublhinado</u> e isso é um <a href="#">link</a></p>
+
+            <h4>Sobreescrito e Subscrito</h4>
+            <p>3<sup>2</sup> é igual a 9</p>
+            <p>A fórmulda da água é H<sub>2</sub>O</p>
+
+            <h4>Abreviações</h4>
+            <p>Para criar páginas na web precisamos aprender <a href="#html-dfn"></a><abbr title="HiperText markup language">HTML</abbr>
+            </p>
+            <p>O <dfn id="html-dfn">
+                <abbr title="HiperText markup language">HTML</abbr>
+            </dfn> é a principal linguagem para poder incluir conteúdo de forma semântica</p>
+
+            <h4>Citações</h4>
+            <blockquote> <!-- apenas forma de agrupar as citações em bloco -->
+                <p>O ruim não é ter trabalho, o ruim é ter de trabalhar</p>
+                <cite>Seu Madruga</cite>
+            </blockquote>
+            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+                O elemento HTML &lt;blockquote&gt; (ou elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação
+                <cite>MDN</cite>
+            </blockquote>
+            <p>Segundo o seu Madruga <q>A vingança nunca é plena, mata a alma e envenena</q></p>
+
+            <p>
+                De acordo com o site Mozilla,
+                <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+                    FireFox foi lançado em 2004 e se tornou um grande sucesso!
+                </q>
+            </p>
+
+            <h4>Coisas de computador</h4>
+            <p>A propriedade <code>background</code> do CSS serve para colocar uma <samp>imagem de fundo</samp></p>
+
+            <pre>
+                tag &lt;pre&gt; serve para colocar textos pre formatados (como códigos)!
+                Embaralhar cartas em python
+                cartas = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+
+                random.shuffle(cartas)
+
+                print("As cartas embaralhadas são:")
+                for carta in cartas:
+                print(carta)
+            </pre>
+
+            <p>Pressione as teclas <kbd>CTRL</kbd> + <kbd>C</kbd> para copiar</p>
+
+            <h4>Datas e Horários</h4>
+
+            <p>O evento ocorrerá as <time datetime="2025-11-10T20:00:00-03:00">20h00 10 de novembro de 2025</time></p>
+            <!-- datetime: escrito em calendario americano 
+                Horario -03:00 para considerar que é no Brasil
+            -->
+            <p><del>11 de novembro de 2025</del>, foi mudado para <ins><time datetime="2025:11:12">12 de novembro de 2025</time></ins></p>
+            
+        </section>
+    </main>
 </body>
 </html>
