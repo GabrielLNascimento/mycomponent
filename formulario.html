@@ -22,5 +22,70 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <h2>My Components</h2>
+
+        <section>
+            <h2 class="title-article">Entre em contato</h2>
+
+            <div class="row">
+                <form action="">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome: </label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                        </div>
+                        <div>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <label for="msg">Digite sua mensagem: </label>
+                    <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+
+                <address>
+                    <p><b>Endereço</b> 1234 Somewhere Rd. Nashville, TN 00000 United States</p>
+                    <p><b>Telefone</b> 000-000-000</p>
+                    <p><b>Email</b> email@server.com</p>
+                </address>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="title-article">Quiz</h2>
+
+            <form action="" class="form-quiz">
+                <label for="ling">Sua linguagem preferida?</label>
+                <select>
+                    <option value="null">Selecione</option>                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="php">php</option>
+                    <option value="C#">C#</option>
+                </select>
+
+                <label for="bxp">Baixa prioridade  <input type="radio" name="prioridade" id="bxp"></label>
+                <label for="mdp">Média prioridade <input type="radio" name="prioridade" id="mdp"></label>
+                <label for="alp">Alta prioridade <input type="radio" name="prioridade" id="alp"></label>
+
+                <label for="envie"><input type="checkbox" name="envie" id="envie"> Envie-me uma cópia </label>
+                <label for="humano"><input type="checkbox" name="humano" id="humano"> Sou um humano </label>
+
+                <div class="row fim">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar" class="btn transp">
+                </div>
+            </form>
+                
+        </section>
+
+
+    </main>
+
 </body>
 </html>

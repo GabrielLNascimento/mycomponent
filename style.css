@@ -34,16 +34,17 @@ nav {
     padding: 6.5rem 2.4rem 2.4rem;
 }
 
-img {
+.foto-perfil {
     border-radius: 50%;
     width: 160px;
+    max-width: 10rem;
 }
 
-ul, ul li a {
+nav ul, ul li a {
     color: white;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     padding: 0px;
 }
@@ -60,7 +61,7 @@ main h2 {
     font-size: 2em;
 }
 
-main .title-article {
+.title-article {
     color: var(--color-orange1);
     font-size: 1.4em;
     font-weight: bolder;
@@ -86,7 +87,7 @@ nav ul a:hover {
     padding-right: 1rem;
 }
 
-li {
+nav li {
     border-bottom: 1px solid #7b7b7b;
     padding: 4px 0px 4px;
 }
@@ -95,9 +96,6 @@ main, header {
     font-size: 1.6rem;
 }
 
-.foto-perfil {
-    max-width: 10rem;
-}
 
 .contatos {
     display: flex;
@@ -138,7 +136,105 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 50px;
 }
 
+.card {
+    max-width: 740px;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--color-gray1);
+}
 
+.row {
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-between;
+}
+
+.row > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.content-card, .content-card h3, .content-card p {
+    margin: 0;
+    padding: 0 0 10px 10px;
+}
+
+.titulo-colado {
+    margin: 0;
+    padding: 60px 0px 20px 0px;
+}
+
+.alternates {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alternates li {
+    border-bottom: 2px solid;
+}
+
+.alternates li:last-child {
+    border: 0px;
+}
+
+.roman {
+    list-style-type: upper-roman;
+}
+
+.emoji-list {
+    list-style-type: "\1F60E";
+}
+
+input,
+label,
+textarea,
+select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-top: 20px;
+}
+
+
+input, textarea, select {
+    background-color: #ccc;
+    padding: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    background-color: var(--color-gray1);
+    color: white;
+    transition: all .2s ease;
+    border: 2px solid rgba(0, 0, 0, 0.678);
+}
+
+.btn:hover {
+    background-color: #202227;
+    cursor: pointer;
+}
+
+.form-quiz {
+    width: calc(50% - 1.5rem);
+}
+
+.fim {
+    margin-top: 50px;
+}
+
+.transp {
+    background-color: transparent;
+}
 
 
 

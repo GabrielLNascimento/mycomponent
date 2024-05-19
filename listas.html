@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Listas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,5 +22,107 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <h2>My Components</h2>
+
+        <article class="destaque">
+            <h2 class="title-article">Listas</h2>
+            <p>Lista é um importante recurso de HTML, pois permite criarmos tópicos de textos para uma melhor exemplificação de um determinado assunto.</p>
+        </article>
+
+        <section class="row">
+            <div>
+                <h3>Não Ordenadas</h3>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ordenadas</h3>
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ol>
+            </div>
+            <div class="alternates">
+                <h3>Alternates</h3>
+                <ul class="alternates">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="row">
+            <div>
+                <h3>Não Ordenadas</h3>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2
+                        <ul>
+                            <li>item 2.1</li>
+                            <li>item 2.2
+                                <ul>
+                                    <li>item 2.2.1</li>
+                                    <li>item 2.2.2</li>
+                                    <li>item 2.2.3</li>
+                                </ul>
+                            </li>
+                            <li>item 2.3</li>
+                        </ul>
+                    </li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Ordenadas</h3>
+                <ol start="6" type="A">
+                    <li>item 1</li>
+                    <li>item 2
+                        <ol type="I" reversed>
+                            <li>item 2.1</li>
+                            <li>item 2.2
+                                <ol type="a" start="10">
+                                    <li>item 2.2.1</li>
+                                    <li>item 2.2.2</li>
+                                    <li>item 2.2.3</li>
+                                </ol>
+                            </li>
+                            <li>item 2.3</li>
+                        </ol>
+                    </li>
+                    <li>item 3</li>
+                </ol>
+            </div>
+
+            <div>
+                <h3>Ambas</h3>
+                <ol class="roman">
+                    <li>item 1</li>
+                    <li>item 2
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2
+                                <ul class="emoji-list">
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                    <li>item 3</li>
+                                </ul>
+                            </li>
+                            <li>item 3</li>
+                        </ul>
+                    </li>
+                    <li>item 3</li>
+                </ol>
+            </div>
+        </section>
+
+    
+    </main>
 </body>
 </html>
