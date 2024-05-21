@@ -12,16 +12,20 @@ html {
 }
 
 body {
-    background-color: var(--color-fundo);
+    background-color: #444856;
     display: flex;
     font-family: var(--fonte-principal);
     margin: 0px;
     padding: 0px;
     line-height: 1.7;
+    background-image: url('ProjetoMyComponents-inicio/imagens/bg-unsplash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: var(--color-gray1);
+    background-color: #31333be1;
     width: 300px;
     margin: 0px;
     padding: 0px;
@@ -54,6 +58,7 @@ main {
     flex: 1 0;
     padding: 6.5rem 6rem 7.5rem;
     color: var(--color-text);
+    background-color: #444856bb;
 }
 
 main h2 {
